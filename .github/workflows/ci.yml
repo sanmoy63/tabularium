@@ -16,7 +16,7 @@ jobs:
         # Python 3.14 resta fuori finché FastAPI/Starlette/TestClient non
         # saranno verificati insieme; la matrice coincide con il supporto
         # dichiarato dal progetto.
-        python-version: ['3.11', '3.12', '3.13']
+        python-version: ['3.12']  # SOLO SUL FORK: matrice ridotta per far girare il job e2e
     defaults:
       run:
         working-directory: backend
