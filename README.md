@@ -134,6 +134,9 @@ environments it orchestrates.
 On macOS and Windows the application remains fully usable for archive
 preparation and annotation. GPU-dependent model serving/training must run on
 Linux, either directly, through WSL2 on Windows, or on a remote Linux GPU.
+The CI runs the complete backend and frontend test/build cycle on macOS in
+addition to the Linux Python-version matrix, so dashboard compatibility is
+checked continuously rather than inferred from the shared POSIX scripts.
 
 ## Quickstart
 
